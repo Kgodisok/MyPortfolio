@@ -1,0 +1,57 @@
+{
+  "name": "KGODISO",
+  "surname": "MATSEPE",
+  "age": 20,
+  "emailAddress": "kgodisomatsepe474@gmail.com",
+  "cellPhoneNumber": [
+    "+27-79-633-8442",
+    "+27-76-195-9053"
+  ],
+  "education": {
+    "schoolName": "Tech Performance Center",
+    "course": "Software Development/Engineering",
+    "dateStarted": "February 2026",
+    "expectedGraduation": "July 2027"
+  },
+  "address": {
+    "country": "South Africa",
+    "province": "Gauteng",
+    "city": "Pretoria",
+    "addressCode": "0002"
+  },
+  "Languages": {
+    "homeLanguage": "Southern Sotho -(Segakopa)",
+    "additionalLanguages": ["English"]
+  },
+  "skills": {
+    "programmingLanguages": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C#"
+    ],
+    "webDevelopment": {
+      "javaScriptFrameWorks": {
+        "frontEnd": ["React.js"],
+        "backEnd": ["Node.js", "Express.js"]
+      },
+      "pythonFrameWorks": ["FlaskAPI"],
+      "javaFrameWorks": ["SpringBoot"]
+    },
+    "database": [
+      "MySQL",
+      "PostgreSQL",
+      "SQL (Structured Query Language)",
+      "JSON (JavaScript Object Notation)"
+    ],
+    "cloudAndDevOp": ["AWS (S3, EC2, Lambda, DynamoDB)"],
+    "toolsAndPlatforms": {
+      "microSoft": [
+        "Word",
+        "Excel",
+        "PowerPoint"
+      ],
+      "devTools": ["VS Code", "Git", "GitHub"]
+    }
+  }
+}
