@@ -13,13 +13,15 @@
     "dateStarted": "February 2026",
     "expectedGraduation": "July 2027"
   },
+
   "address": {
     "country": "South Africa",
     "province": "Gauteng",
     "city": "Pretoria",
     "addressCode": "0002"
   },
-  "Languages": {
+  "languages": {
+  
     "homeLanguage": "Southern Sotho -(Segakopa)",
     "additionalLanguages": ["English"]
   },

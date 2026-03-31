@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 const { error } = require('console');
-const express = require('express')
+const express = require('express');
+const { appendFile } = require('fs');
 const app = express()
 
 async function loadJSON() {
@@ -41,7 +42,68 @@ app.get('/age', async (req, res)=>{
   }
 });
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+app.get('/emailAddress', async (req, res)=>{
+  const data = await loadJSON();
+  if (data && data.emailAddress){
+    res.status(200).send(data.emailAddress)
+  } else {
+    res.status(500).send({error: "Email Address Not Found"})
+  }
 });
+
+app.get('/education', async (req, res)=>{
+  const data = await loadJSON();
+  if (data && data.education){
+    res.status(200).send(data.education)
+  } else {
+    res.status(500).send({error: "Education Not Found"})
+  }
+});
+
+app.get('/address', async (req, res)=>{
+  const data = await loadJSON();
+  if (data && data.address){
+    res.status(200).send(data.address)
+  } else {
+    res.status(500).send({error: "Address Not Found"})
+  }
+});
+
+
+app.get('/cellPhoneNumber', async (req, res)=>{
+  const data = await loadJSON();
+  if (data && data.cellPhoneNumber){
+    res.status(200).send(data.cellPhoneNumber)
+  } else {
+    res.status(500).send({error: "Cell Phone Number Not Found"})
+  } 
+});
+
+app.get('/languages', async (req, res)=>{
+  const data = await loadJSON();
+  if (data && data.languages){
+    res.status(200).send(data.languages)
+  } else {
+    res.status(500).send({error: "Languages Not Found"})
+  }
+});
+
+
+app.get('/skills', async (req, res)=>{
+  const data = await loadJSON();
+  if (data && data.skills){
+    res.status(200).send(data.skills)
+  } else {
+    res.status(500).send({error: "Skills Not Found"})
+  }
+});
+
+
+
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+
 
