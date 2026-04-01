@@ -107,3 +107,6 @@ app.listen(PORT, () => {
 });
 
 
+// exporting endpoints
+
+module.exports = app;
